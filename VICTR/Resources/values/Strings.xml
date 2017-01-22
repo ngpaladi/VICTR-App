@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Begin">Begin</string>
+    <string name="Scoreboard">Scoreboard</string>
+    <string name="Register">Register</string>
+    <string name="ApplicationName">VICTR</string>
+</resources>
