@@ -16,9 +16,33 @@
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2">
+            <TextView
+                android:text="Team 1: 0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView1" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow3">
+            <TextView
+                android:text="Team 1: 0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView1" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4">
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dp"
+                android:layout_marginLeft="20.0dp"
+                android:text="Back" />
         </TableRow>
     </TableLayout>
 </LinearLayout>

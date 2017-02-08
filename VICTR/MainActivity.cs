@@ -50,7 +50,24 @@ namespace VICTR
         }
         void StartChoiceScreen(string ip)
         {
+            SetContentView(Resource.Layout.Choice);
+            Button toScoreboard = FindViewById<Button>(Resource.Id.toScoreboard);
+            Button toRegister = FindViewById<Button>(Resource.Id.toRegister);
 
+            toScoreboard.Click += delegate { StartScoreboardScreen(ip); };
+            toRegister.Click += delegate { StartRegisterScreen(ip); };
+        }
+        void StartRegisterScreen(string ip)
+        {
+            SetContentView(Resource.Layout.Scoreboard);
+            Button back = FindViewById<Button>(Resource.Id.BackButton);
+            back.Click += delegate { StartChoiceScreen(ip); };
+        }
+        void StartScoreboardScreen(string ip)
+        {
+            SetContentView(Resource.Layout.Scoreboard);
+            Button back = FindViewById<Button>(Resource.Id.BackButton);
+            back.Click += delegate { StartChoiceScreen(ip); };
         }
         protected override void OnCreate(Bundle bundle)
         {
